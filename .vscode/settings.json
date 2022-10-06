@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.configPath": ".prettierrc",
+  "[javascript]": {
+    "editor.formatOnSave": true
+  }
+}
