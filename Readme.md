@@ -1,6 +1,6 @@
 # Simple JWT APP
 
-The **jwt-client** helps to test the WP REST API authentication using the JWT Authentication for WP REST API on a WordPress installation.
+The **jwt-client** helps to test the WP REST API authentication using the [JWT Authentication for WP REST API](https://es.wordpress.org/plugins/jwt-authentication-for-wp-rest-api/) on a WordPress installation.
 
 The client signs the user using their user and password against WordPress and gets the JWT Token for future requests.
 
@@ -19,7 +19,7 @@ The app is made with [React Native](https://reactnative.dev/), [Expo](https://ex
 ### Clone the repo
 
 ```bash
-git clone ...
+git clone git@github.com:Tmeister/jwt-client.git
 ```
 
 ### Install dependencies
