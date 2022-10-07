@@ -1,4 +1,4 @@
-const baseUrl = 'https://incandescent-regret.flywheelsites.com/';
+const baseUrl = 'https://yoursite.com/';
 const apiUrl = `${baseUrl}wp-json/jwt-auth/v1/`;
 
 const authenticate = async (username, password) => {
@@ -65,4 +65,4 @@ const verifyToken = async (token) => {
   return data;
 };
 
-export { authenticate, whoami, verifyToken, baseUrl, apiUrl };
+export { authenticate, whoami, verifyToken, apiUrl };

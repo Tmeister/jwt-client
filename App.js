@@ -8,6 +8,7 @@ import { authenticate } from './services';
 
 export default function App() {
   const [token, setToken] = useState(null);
+
   const handleAuthentication = async (username, password) => {
     const remoteToken = await authenticate(username, password);
     if (!remoteToken) {
@@ -21,7 +22,7 @@ export default function App() {
   return (
     <View className="flex-1 items-center justify-center bg-gray-100">
       {!token && <SignInForm remoteAuthentication={handleAuthentication} />}
-      {token && <Dashboard token={token} />}
+      {token && <Dashboard token={token} logout={() => setToken(false)} />}
 
       <StatusBar style="auto" />
     </View>

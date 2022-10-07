@@ -4,8 +4,8 @@ import { View, TextInput, Text, TouchableOpacity } from 'react-native';
 import { apiUrl } from '../services';
 
 export default function SignInForm(props) {
-  const [username, setUsername] = useState('tmeister@gmail.com');
-  const [password, setPassword] = useState('ygt9pfu.rqv4AUB7pet');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const onPress = () => {
     props.remoteAuthentication(username, password);
   };

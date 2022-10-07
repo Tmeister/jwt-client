@@ -46,6 +46,11 @@ export default function AuthenticationActions(props) {
           className="flex justify-center rounded-md border border-transparent bg-blue-600 p-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 w-60 mx-auto mt-4">
           <Text className="text-center text-white">Verify Token</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={props.logout}
+          className="flex justify-center rounded-md border border-transparent bg-red-600 p-4 text-sm font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 w-60 mx-auto mt-4">
+          <Text className="text-center text-white">Logout</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
