@@ -1,23 +1,25 @@
 import { useState } from 'react';
 import { View, TextInput, Text, TouchableOpacity } from 'react-native';
 
+import { apiUrl } from '../services';
+
 export default function SignInForm(props) {
-  const [username, setUsername] = useState('noone@tmeister.net');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('tmeister@gmail.com');
+  const [password, setPassword] = useState('ygt9pfu.rqv4AUB7pet');
   const onPress = () => {
     props.remoteAuthentication(username, password);
   };
 
   return (
-    <View className="flex min-h-full flex-col justify-center py-12">
+    <View className="flex min-h-full w-full flex-col justify-center py-12">
       <View className="">
-        <Text className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-          Sign in to your account
+        <Text className="mt-6 text-center text-xl font-bold tracking-tight text-gray-900">
+          Sign in to your WordPress API
         </Text>
       </View>
 
       <View className="mt-8">
-        <View className="bg-white py-8 px-4 shadow rounded-lg">
+        <View className="bg-white py-8 px-4 shadow rounded-lg mx-5">
           <View>
             <Text className="block text-sm font-bold text-gray-500">Email Address or Username</Text>
             <View className="mt-2">
@@ -50,6 +52,11 @@ export default function SignInForm(props) {
             </TouchableOpacity>
           </View>
         </View>
+      </View>
+
+      <View className="m-5">
+        <Text className="text-center text-sm text-gray-500">API URL</Text>
+        <Text className="text-center text-sm text-gray-500">{apiUrl}</Text>
       </View>
     </View>
   );
